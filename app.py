@@ -1,45 +1,91 @@
 import streamlit as st
 
-# Set up the page title and layout
-st.set_page_config(page_title="My Finance Portfolio", layout="centered")
+# 1. Set up the page title, icon, and wide layout to give your elements breathing room
+st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="📊", layout="wide")
 
-# --- HERO SECTION ---
-st.title("Hi, I'm Belise")
-st.subheader("Student at MIT")
-st.write(
-    "Welcome to my portfolio."
-)
+# --- HERO SECTION (Stays pinned at the top across all tabs) ---
+st.title("📊 Financial Analysis Portfolio")
+st.write("Welcome to my professional workspace.")
+st.markdown("---")
 
-st.write("---")
+# 2. Define your 3 professional tabs
+tab1, tab2, tab3 = st.tabs(["🏠 Home & About", "📈 Finance Projects", "📬 Get In Touch"])
 
-# --- ABOUT ME SECTION ---
-st.header("About Me")
-st.write(
-    """
-    - B.S. in Finance & Mathematics at MIT
-    - Class of 2028
-    - Passionate about corporate finance, asset management, and sales & trading.
-    -  Skills: Financial Modeling, Python (Pandas, NumPy), RStudio, Excel.
-    """
-)
+# ==========================================
+# TAB 1: HOME & ABOUT ME
+# ==========================================
+with tab1:
+    # We will use columns to give the layout structure
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        st.header("Hi, I'm Belise")
+        st.subheader("Student at the Massachusetts Institute of Technology (MIT)")
+        
+        st.write(
+            """
+            Welcome to my interactive finance portfolio! I am a passionate student building quantitative and fundamental tools 
+            at the intersection of corporate finance, asset management, and technical programming. 
+            """
+        )
+        
+        st.info("💡 **Key Focus Areas:** Corporate Finance | Asset Management | Sales & Trading")
 
-st.write("---")
+    with col2:
+        # A clean summary container block for quick scanning
+        with st.container(border=True):
+            st.markdown("### 🎓 Profile Summary")
+            st.markdown("**Education:** B.S. in Finance & Mathematics")
+            st.markdown("**Institution:** MIT (Class of 2028)")
+            st.markdown("**Technical Skills:** Python (Pandas, NumPy), RStudio, Excel, Financial Modeling")
 
-# --- PROJECTS SECTION ---
-st.header("My Finance Projects")
+# ==========================================
+# TAB 2: FINANCE PROJECTS
+# ==========================================
+with tab2:
+    st.header("Academic & Personal Projects")
+    st.write("Explore my quantitative models and historical analysis below.")
+    st.write("---")
 
-# Project 1
-st.subheader("1. Merger Arbitrage Investment Strategy")
-st.write("Built a Discounted Cash Flow (DCF) model that pulls live stock data using the Yahoo Finance API.")
-st.markdown("[View Code on GitHub](https://github.com)") # Replace with your link
+    # Project 1 Layout
+    p1_col1, p1_col2 = st.columns([3, 1])
+    with p1_col1:
+        st.subheader("1. Merger Arbitrage Investment Strategy")
+        st.write(
+            "Built a dynamic Discounted Cash Flow (DCF) model that pulls live stock data using the "
+            "Yahoo Finance (`yfinance`) API to analyze premium spreads and risk-reward ratios in active corporate mergers."
+        )
+    with p1_col2:
+        st.write("") # Padding space
+        st.write("")
+        st.markdown("[📁 View GitHub Repo](https://github.com)") # Replace with your real link
 
-# Project 2
-st.subheader("2. TWitter LBO Model")
-st.write("A Python script that calculates the Monte Carlo simulation for cryptocurrency portfolios.")
-st.markdown("[View Code on GitHub](https://github.com)")
+    st.write("---")
 
-st.write("---")
+    # Project 2 Layout
+    p2_col1, p2_col2 = st.columns([3, 1])
+    with p2_col1:
+        st.subheader("2. Quantitative Portfolio Simulation")
+        st.write(
+            "Developed a Python script that executes a Monte Carlo simulation engine to stress-test "
+            "asset allocations, forecasting volatility and portfolio performance metrics across thousands of randomized market paths."
+        )
+    with p2_col2:
+        st.write("") # Padding space
+        st.write("")
+        st.markdown("[📁 View GitHub Repo](https://github.com)") # Replace with your real link
 
-# --- CONTACT FORM ---
-st.header("Get In Touch")
-st.write("Feel free to reach out to me via [LinkedIn](https://linkedin.com) or email at belise@mit.edu.")
+# ==========================================
+# TAB 3: CONTACT INFORMATION
+# ==========================================
+with tab3:
+    st.header("Get In Touch")
+    st.write("I am always eager to connect regarding internship opportunities, research collaborations, or networking.")
+    
+    st.success("✅ **Open to Opportunities:** Seeking Summer 2027/2028 opportunities in quantitative finance and banking.")
+    
+    # Clean contact alignment using decorative block styling
+    with st.container(border=True):
+        st.markdown("### 📬 Direct Channels")
+        st.markdown("📧 **Email:** [belise@mit.edu](mailto:belise@mit.edu)")
+        st.markdown("💼 **Professional Network:** [Connect with me on LinkedIn](https://linkedin.com)")
