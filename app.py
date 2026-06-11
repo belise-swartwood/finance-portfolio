@@ -76,9 +76,9 @@ with tab2:
         st.write(
             """
             * **Designed and backtested the “ArbiTIM” statistical arbitrage strategy**, across 285 all-cash M&A deals ($500M+) from
-2015–2024; constructed a market-neutral portfolio achieving low beta and reduced volatility relative to the S&P 500stress-testing IRR and cash-on-cash returns across exit scenarios under varying DAU growth and ad-revenue margin assumptions with multi-tranche debt structures and revolving credit facilities.
+                2015–2024; constructed a market-neutral portfolio achieving low beta and reduced volatility relative to the S&P 500stress-testing IRR and cash-on-cash returns across exit scenarios under varying DAU growth and ad-revenue margin assumptions with multi-tranche debt structures and revolving credit facilities.
             * **Quantified deal-failure probabilities and modeled regulatory execution risk**,  using R and Bloomberg Terminal; optimized
-position sizing based on risk-adjusted return profiles and tail-risk scenarios
+                position sizing based on risk-adjusted return profiles and tail-risk scenarios.
             """
         )
     with p2_col2:
