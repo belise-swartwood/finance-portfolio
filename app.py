@@ -31,18 +31,16 @@ with tab1:
         
         st.info("💡 **Key Focus Areas:** Corporate Finance | Asset Management | Sales & Trading")
 
-    with col2:
-        # --- NEW CODE: Add your image here ---
-        # Replace "profile_pic.jpg" with the actual name of your image file.
-        # use_container_width=True ensures the image scales perfectly to fit the column.
-        st.image("headshot.jpg", use_container_width=True) 
-        
-        # A clean summary container block for quick scanning
+        # --- MOVED HERE: Profile summary container block is now under Key Focus Areas ---
         with st.container(border=True):
             st.markdown("### 🎓 Profile Summary")
             st.markdown("**Education:** B.S. in Finance & Mathematics")
             st.markdown("**Institution:** MIT (Class of 2028)")
             st.markdown("**Technical Skills:** Python (Pandas, NumPy), RStudio, Excel, Financial Modeling")
+
+    with col2:
+        # This keeps the image isolated in the right-hand column so it stretches cleanly
+        st.image("headshot.jpg", use_container_width=True)
 # ==========================================
 # TAB 2: FINANCE PROJECTS
 # ==========================================
