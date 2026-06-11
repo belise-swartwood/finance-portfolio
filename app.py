@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. Set up the page title, icon, and wide layout to give your elements breathing room
-st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="", layout="wide")
 
 # --- HERO SECTION (Stays pinned at the top across all tabs) ---
 st.title("📊 Financial Analysis Portfolio")
@@ -9,7 +9,7 @@ st.write("Welcome to my professional workspace.")
 st.markdown("---")
 
 # 2. Define your 3 professional tabs
-tab1, tab2, tab3 = st.tabs(["🏠 Home & About", "📈 Finance Projects", "📬 Get In Touch"])
+tab1, tab2, tab3 = st.tabs([" Home & About", " Finance Projects", " Get In Touch"])
 
 # ==========================================
 # TAB 1: HOME & ABOUT ME
@@ -36,7 +36,7 @@ with tab1:
             st.markdown("### 🎓 About me")
             st.markdown("**Education:** B.S. in Finance & Mathematics")
             st.markdown("**Institution:** MIT (Class of 2028)")
-            st.markdown("**Technical Skills:** Python (Pandas, NumPy), RStudio, Excel, Financial Modeling")
+            st.markdown("**Technical Skills:** Python (Pandas, NumPy), R Programming, Excel, Financial Modeling")
 
     with col2:
         # This keeps the image isolated in the right-hand column so it stretches cleanly
