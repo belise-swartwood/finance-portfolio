@@ -73,6 +73,7 @@ with tab2:
     p2_col1, p2_col2 = st.columns([3, 1])
     with p2_col1:
         st.subheader("2. Merger Arbitrage Investment Strategy")
+        st.caption("📅 Nov - Dec 2025")
         st.write(
             """
             * **Designed and backtested the “ArbiTIM” statistical arbitrage strategy**, across 285 all-cash M&A deals ($500M+) from
