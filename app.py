@@ -4,11 +4,10 @@ import streamlit as st
 st.set_page_config(page_title="My Finance Portfolio", layout="centered")
 
 # --- HERO SECTION ---
-st.title("Hi, I'm Alex 👋")
-st.subheader("Financial Analyst & Python Enthusiast")
+st.title("Hi, I'm Belise")
+st.subheader("Student at MIT")
 st.write(
-    "Welcome to my portfolio. I use Python to analyze market data, "
-    "build financial models, and uncover investment insights."
+    "Welcome to my portfolio."
 )
 
 st.write("---")
@@ -17,9 +16,10 @@ st.write("---")
 st.header("About Me")
 st.write(
     """
-    - Passionate about corporate finance, asset management, and data visualization.
-    -  B.S. in Finance / Economics.
-    -  Skills: Financial Modeling, Python (Pandas, NumPy), Excel, Tableau.
+    - B.S. in Finance & Mathematics at MIT
+    - Class of 2028
+    - Passionate about corporate finance, asset management, and sales & trading.
+    -  Skills: Financial Modeling, Python (Pandas, NumPy), RStudio, Excel.
     """
 )
 
@@ -29,12 +29,12 @@ st.write("---")
 st.header("My Finance Projects")
 
 # Project 1
-st.subheader("1. Automated Stock DCF Model")
+st.subheader("1. Merger Arbitrage Investment Strategy")
 st.write("Built a Discounted Cash Flow (DCF) model that pulls live stock data using the Yahoo Finance API.")
 st.markdown("[View Code on GitHub](https://github.com)") # Replace with your link
 
 # Project 2
-st.subheader("2. Crypto Portfolio Risk Analyzer")
+st.subheader("2. TWitter LBO Model")
 st.write("A Python script that calculates the Monte Carlo simulation for cryptocurrency portfolios.")
 st.markdown("[View Code on GitHub](https://github.com)")
 
@@ -42,4 +42,4 @@ st.write("---")
 
 # --- CONTACT FORM ---
 st.header("Get In Touch")
-st.write("Feel free to reach out to me via [LinkedIn](https://linkedin.com) or email at alex@example.com.")
+st.write("Feel free to reach out to me via [LinkedIn](https://linkedin.com) or email at belise@mit.edu.")
