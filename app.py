@@ -5,7 +5,7 @@ st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="", layout
 
 # --- HERO SECTION (Stays pinned at the top across all tabs) ---
 st.title("Belise Swartwood")
-st.write("Welcome to my professional workspace.")
+st.write("Financial Analysis Portfolio")
 st.markdown("---")
 
 # 2. Define your 3 professional tabs
