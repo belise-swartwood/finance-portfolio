@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="", layout="wide")
 
 # --- HERO SECTION (Stays pinned at the top across all tabs) ---
-st.title("Financial Analysis Portfolio")
+st.title("Belise Swartwood")
 st.write("Welcome to my professional workspace.")
 st.markdown("---")
 
