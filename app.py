@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Belise's Finance Portfolio", page_icon="", layout="wide")
 
 # --- HERO SECTION (Stays pinned at the top across all tabs) ---
-st.title("📊 Financial Analysis Portfolio")
+st.title("Financial Analysis Portfolio")
 st.write("Welcome to my professional workspace.")
 st.markdown("---")
 
@@ -33,7 +33,7 @@ with tab1:
 
         # --- MOVED HERE: Profile summary container block is now under Key Focus Areas ---
         with st.container(border=True):
-            st.markdown("### 🎓 About me")
+            st.markdown("### About me")
             st.markdown("**Education:** B.S. in Finance & Mathematics")
             st.markdown("**Institution:** MIT (Class of 2028)")
             st.markdown("**Technical Skills:** Python (Pandas, NumPy), R Programming, Excel, Financial Modeling")
@@ -53,9 +53,14 @@ with tab2:
     p1_col1, p1_col2 = st.columns([3, 1])
     with p1_col1:
         st.subheader("1. Twitter LBO Model")
+        st.caption("📅 Feb 2026")
+        
+        # Using triple quotes lets you break text into multiple lines and use bullet points
         st.write(
-            "Built a dynamic Discounted Cash Flow (DCF) model that pulls live stock data using the "
-            "Yahoo Finance (`yfinance`) API to analyze premium spreads and risk-reward ratios in active corporate mergers."
+            """
+            * **Modeled Twitter’s \$44B LBO acquisition**, stress-testing IRR and cash-on-cash returns across exit scenarios under varying DAU growth and ad-revenue margin assumptions with multi-tranche debt structures and revolving credit facilities.
+            * **Identified cost-cutting thresholds** necessary to service high-yield debt obligations through sensitivity analysis; assessed deal viability under downside scenarios including user growth stagnation.
+            """
         )
     with p1_col2:
         st.write("") # Padding space
