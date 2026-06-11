@@ -33,7 +33,7 @@ with tab1:
 
         # --- MOVED HERE: Profile summary container block is now under Key Focus Areas ---
         with st.container(border=True):
-            st.markdown("### 🎓 Profile Summary")
+            st.markdown("### 🎓 About me")
             st.markdown("**Education:** B.S. in Finance & Mathematics")
             st.markdown("**Institution:** MIT (Class of 2028)")
             st.markdown("**Technical Skills:** Python (Pandas, NumPy), RStudio, Excel, Financial Modeling")
