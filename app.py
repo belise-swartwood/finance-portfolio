@@ -44,13 +44,13 @@ with tab1:
 # ==========================================
 with tab2:
     st.header("Academic & Personal Projects")
-    st.write("Explore my quantitative models and historical analysis below.")
+    st.write("Explore my financial models and analysis below.")
     st.write("---")
 
     # Project 1 Layout
     p1_col1, p1_col2 = st.columns([3, 1])
     with p1_col1:
-        st.subheader("1. Merger Arbitrage Investment Strategy")
+        st.subheader("1. Twitter LBO Model")
         st.write(
             "Built a dynamic Discounted Cash Flow (DCF) model that pulls live stock data using the "
             "Yahoo Finance (`yfinance`) API to analyze premium spreads and risk-reward ratios in active corporate mergers."
@@ -65,7 +65,7 @@ with tab2:
     # Project 2 Layout
     p2_col1, p2_col2 = st.columns([3, 1])
     with p2_col1:
-        st.subheader("2. Quantitative Portfolio Simulation")
+        st.subheader("2. Merger Arbitrage Investment Strategy")
         st.write(
             "Developed a Python script that executes a Monte Carlo simulation engine to stress-test "
             "asset allocations, forecasting volatility and portfolio performance metrics across thousands of randomized market paths."
@@ -79,7 +79,7 @@ with tab2:
 # TAB 3: CONTACT INFORMATION
 # ==========================================
 with tab3:
-    st.header("Get In Touch")
+    st.header("Contact")
     st.write("I am always eager to connect regarding internship opportunities, research collaborations, or networking.")
     
     st.success("✅ **Open to Opportunities:** Seeking Summer 2027/2028 opportunities in quantitative finance and banking.")
@@ -88,4 +88,4 @@ with tab3:
     with st.container(border=True):
         st.markdown("### 📬 Direct Channels")
         st.markdown("📧 **Email:** [belise@mit.edu](mailto:belise@mit.edu)")
-        st.markdown("💼 **Professional Network:** [Connect with me on LinkedIn](https://linkedin.com)")
+        st.markdown("💼 **Professional Network:** [Connect with me on LinkedIn](https://www.linkedin.com/in/belise-swartwood/)")
