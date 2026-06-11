@@ -17,9 +17,9 @@ st.write("---")
 st.header("About Me")
 st.write(
     """
-    - 📈 Passionate about corporate finance, asset management, and data visualization.
-    - 🎓 B.S. in Finance / Economics.
-    - 🛠️ Skills: Financial Modeling, Python (Pandas, NumPy), Excel, Tableau.
+    - Passionate about corporate finance, asset management, and data visualization.
+    -  B.S. in Finance / Economics.
+    -  Skills: Financial Modeling, Python (Pandas, NumPy), Excel, Tableau.
     """
 )
 
