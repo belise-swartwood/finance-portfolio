@@ -35,7 +35,7 @@ with tab1:
         # --- NEW CODE: Add your image here ---
         # Replace "profile_pic.jpg" with the actual name of your image file.
         # use_container_width=True ensures the image scales perfectly to fit the column.
-        st.image("profile_pic.jpg", use_container_width=True) 
+        st.image("headshot.jpg", use_container_width=True) 
         
         # A clean summary container block for quick scanning
         with st.container(border=True):
