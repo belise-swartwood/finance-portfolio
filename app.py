@@ -133,6 +133,9 @@ with tab4:
     
     with col1:
         st.subheader("🏃‍♂️ Athletics & Discipline")
+        # Add your image here! 
+        # use_container_width=True ensures the image scales perfectly to fit the column size
+        st.image("butterfly.JPG", caption="MIT Varsity Swimming", use_container_width=True)
         st.write("""
         * **MIT Varsity Swimming:** Member of MIT's Swimming & Diving program. NCAA All-American 2024-2026, Academic All-American
         * **Long-Distance Running:** Currently training for my first half-marathon. It teaches me patience, consistency, and how to push through mental blocks.
