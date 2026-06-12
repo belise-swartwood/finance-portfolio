@@ -29,7 +29,7 @@ with tab1:
             """
         )
         
-        st.info("💡 **Key Focus Areas:** Corporate Finance | Asset Management | Sales & Trading")
+        st.info(" **Key Focus Areas:** Corporate Finance | Asset Management | Sales & Trading")
 
         # --- MOVED HERE: Profile summary container block is now under Key Focus Areas ---
         with st.container(border=True):
