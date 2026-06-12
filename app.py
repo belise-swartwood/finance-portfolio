@@ -113,15 +113,16 @@ with tab4:
     with col1:
         st.subheader("🏃‍♂️ Athletics & Discipline")
         st.write("""
+        * **MIT Varisty Swimming:** Member of MIT's Swimming & Diving program. NCAA All-American 2024-2026, Academic All-American
         * **Long-Distance Running:** Currently training for my first half-marathon. It teaches me patience, consistency, and how to push through mental blocks.
-        * **Intramural Volleyball:** Team captain for our campus league, focusing on communication and strategic plays.
+        
         """)
         
     with col2:
-        st.subheader("🎨 Creative Outlets & Volunteering")
+        st.subheader("🎨 Creative Outlets")
         st.write("""
-        * **Photography:** I enjoy landscape and street photography. It helps me look at the world from different perspectives.
-        * **Youth Mentorship:** Volunteer weekly at a local community center teaching financial literacy basics to high school students.
+        * **Music:** I'm a violinist who enjoys studying and performing classical music.
+        * **Arts & Crafts:** I also enjoy making things like leather journals, drawing, and crocheting.
         """)
         
     st.markdown("---")
