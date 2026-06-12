@@ -140,7 +140,7 @@ with tab4:
         
         # Add your image here! 
         # use_container_width=True ensures the image scales perfectly to fit the column size
-        st.image("butterfly.jpg", caption="MIT Varsity Swimming", use_container_width=True)
+        st.image("butterfly.JPG", caption="MIT Varsity Swimming", use_container_width=True)
         
     with col2:
         st.subheader("🎨 Creative Outlets")
