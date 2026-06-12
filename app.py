@@ -9,7 +9,7 @@ st.write("Financial Analysis Portfolio")
 st.markdown("---")
 
 # 2. Define your 3 professional tabs
-tab1, tab2, tab3 = st.tabs([" Home & About", " Finance Projects", " Get In Touch"])
+tab1, tab2, tab3 = st.tabs([" Home & About", " Finance Projects", " Get In Touch", "Beyond Finance"])
 
 # ==========================================
 # TAB 1: HOME & ABOUT ME
@@ -101,3 +101,27 @@ with tab3:
         st.markdown("### Direct Channels")
         st.markdown(" **Email:** [belise@mit.edu](mailto:belise@mit.edu)")
         st.markdown(" **Professional Network:** [Connect with me on LinkedIn](https://www.linkedin.com/in/belise-swartwood/)")
+        # ==========================================
+# TAB 4: Beyond Finance
+# ==========================================
+with tab3:
+    st.header("Extracurriculars & Interests")
+    st.write("When I'm not balancing models or analyzing market trends, here is what keeps me busy:")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("🏃‍♂️ Athletics & Discipline")
+        st.write("""
+        * **Long-Distance Running:** Currently training for my first half-marathon. It teaches me patience, consistency, and how to push through mental blocks.
+        * **Intramural Volleyball:** Team captain for our campus league, focusing on communication and strategic plays.
+        """)
+        
+    with col2:
+        st.subheader("🎨 Creative Outlets & Volunteering")
+        st.write("""
+        * **Photography:** I enjoy landscape and street photography. It helps me look at the world from different perspectives.
+        * **Youth Mentorship:** Volunteer weekly at a local community center teaching financial literacy basics to high school students.
+        """)
+        
+    st.markdown("---")
