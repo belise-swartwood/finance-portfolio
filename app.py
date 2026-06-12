@@ -138,6 +138,9 @@ with tab4:
         * **Long-Distance Running:** Currently training for my first half-marathon. It teaches me patience, consistency, and how to push through mental blocks.
         
         """)
+    with col1:
+        # This keeps the image isolated in the right-hand column so it stretches cleanly
+        st.image("butterfly.jpg", use_container_width=True)
         
     with col2:
         st.subheader("🎨 Creative Outlets")
