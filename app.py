@@ -9,7 +9,7 @@ st.write("Financial Analysis Portfolio")
 st.markdown("---")
 
 # 2. Define your 3 professional tabs
-tab1, tab2, tab3 = st.tabs([" Home & About", " Finance Projects", " Get In Touch", "Beyond Finance"])
+tab1, tab2, tab3, tab4 = st.tabs([" Home & About", " Finance Projects", " Get In Touch", "Beyond Finance"])
 
 # ==========================================
 # TAB 1: HOME & ABOUT ME
@@ -104,7 +104,7 @@ with tab3:
         # ==========================================
 # TAB 4: Beyond Finance
 # ==========================================
-with tab3:
+with tab4:
     st.header("Extracurriculars & Interests")
     st.write("When I'm not balancing models or analyzing market trends, here is what keeps me busy:")
     
