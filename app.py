@@ -53,7 +53,7 @@ with tab2:
     p1_col1, p1_col2 = st.columns([3, 1])
     with p1_col1:
         st.subheader("1. Twitter LBO Model")
-        st.caption("📅 Feb 2026")
+        st.caption("Feb 2026")
         
         # Using triple quotes lets you break text into multiple lines and use bullet points
         st.write(
@@ -73,7 +73,7 @@ with tab2:
     p2_col1, p2_col2 = st.columns([3, 1])
     with p2_col1:
         st.subheader("2. Merger Arbitrage Investment Strategy")
-        st.caption("📅 Nov - Dec 2025")
+        st.caption("Nov - Dec 2025")
         st.write(
             """
             * **Designed and backtested the “ArbiTIM” statistical arbitrage strategy**, across 285 all-cash M&A deals ($500M+) from
@@ -94,10 +94,10 @@ with tab3:
     st.header("Contact")
     st.write("I am always eager to connect regarding internship opportunities, research collaborations, or networking.")
     
-    st.success("✅ **Open to Opportunities:** Seeking Summer 2027/2028 opportunities in quantitative finance and banking.")
+    st.success(" **Open to Opportunities:** Seeking Summer 2027/2028 opportunities in quantitative finance and banking.")
     
     # Clean contact alignment using decorative block styling
     with st.container(border=True):
-        st.markdown("### 📬 Direct Channels")
-        st.markdown("📧 **Email:** [belise@mit.edu](mailto:belise@mit.edu)")
-        st.markdown("💼 **Professional Network:** [Connect with me on LinkedIn](https://www.linkedin.com/in/belise-swartwood/)")
+        st.markdown("### Direct Channels")
+        st.markdown(" **Email:** [belise@mit.edu](mailto:belise@mit.edu)")
+        st.markdown(" **Professional Network:** [Connect with me on LinkedIn](https://www.linkedin.com/in/belise-swartwood/)")
