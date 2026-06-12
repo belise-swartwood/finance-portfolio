@@ -37,7 +37,7 @@ with tab1:
             st.markdown("**Education:** B.S. in Finance & Mathematics")
             st.markdown("**Institution:** MIT (Class of 2028)")
             st.markdown("**Technical Skills:** Python (Pandas, NumPy), R Programming, Excel, Financial Modeling")
-
+            st.markdown("**Extracurriculars:** MIT Swimming & Diving, MIT Chamber Music Society, MIT Emerson/Harris Scholar")
     with col2:
         # This keeps the image isolated in the right-hand column so it stretches cleanly
         st.image("headshot.jpg", use_container_width=True)
