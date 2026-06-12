@@ -48,11 +48,32 @@ with tab2:
     st.header("Academic & Personal Projects")
     st.write("Explore my financial models and analysis below.")
     st.write("---")
-
     # Project 1 Layout
     p1_col1, p1_col2 = st.columns([3, 1])
     with p1_col1:
-        st.subheader("1. Twitter LBO Model")
+        st.subheader("Macro Investment Memo")
+        st.caption("June 2026")
+        
+        # Using triple quotes lets you break text into multiple lines and use bullet points
+        st.write(
+            """
+            * **Authored an independent macro research memo**, recommending a long USD/TRY position, building yield curve, real yield,
+                and inflation-differential models in Python from FRED, BLS, and CME FedWatch data
+            * **Tested the conventional thesis**  that rising US real yields drive EM currency weakness, identified the Turkey-US inflation
+                differential as the dominant driver (0.75 correlation since 2018), constructed a trade with explicit entry, target, stop-loss,
+                and risk scenarios
+            """
+        )
+    with p1_col2:
+        st.write("") # Padding space
+        st.write("")
+        #st.markdown("[📁 View GitHub Repo](https://github.com)") # Replace with your real link
+
+    st.write("---")
+    # Project 2 Layout
+    p1_col1, p1_col2 = st.columns([3, 1])
+    with p1_col1:
+        st.subheader("Twitter LBO Model")
         st.caption("Feb 2026")
         
         # Using triple quotes lets you break text into multiple lines and use bullet points
@@ -69,10 +90,10 @@ with tab2:
 
     st.write("---")
 
-    # Project 2 Layout
+    # Project 3 Layout
     p2_col1, p2_col2 = st.columns([3, 1])
     with p2_col1:
-        st.subheader("2. Merger Arbitrage Investment Strategy")
+        st.subheader("Merger Arbitrage Investment Strategy")
         st.caption("Nov - Dec 2025")
         st.write(
             """
