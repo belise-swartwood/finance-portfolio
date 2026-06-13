@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="13" fill="#F6F1E7" />
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="11.75" fill="none" stroke="#1C5C3E" stroke-width="1.5" />
+  <!-- Upward trend line -->
+  <polyline points="13,45 24,37 32,41 42,28 51,17" fill="none" stroke="#1C5C3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="51" cy="17" r="4" fill="#9F7A24" />
+  <!-- Baseline -->
+  <path d="M13 50 H51" stroke="#D8CDB4" stroke-width="2.5" stroke-linecap="round" />
+</svg>

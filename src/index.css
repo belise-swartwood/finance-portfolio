@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink-soft antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: rgba(28, 92, 62, 0.18);
+    color: #103d29;
+  }
+
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ede5d4;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c5c3e;
+    border-radius: 999px;
+    border: 3px solid #ede5d4;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
+  }
+
+  .section-pad {
+    @apply py-24 sm:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 font-mono text-xs font-medium uppercase tracking-[0.3em] text-forest;
+  }
+
+  .card {
+    @apply rounded-lg border border-rule bg-paper-light shadow-soft;
+  }
+
+  .card-flat {
+    @apply rounded-lg border border-rule bg-paper-light;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-rule bg-paper px-3 py-1 font-mono text-[0.7rem] font-medium uppercase tracking-wide text-ink-soft;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-semibold text-paper-light shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-forest-deep focus:outline-none focus-visible:ring-2 focus-visible:ring-forest/40;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 bg-transparent px-6 py-3 text-sm font-semibold text-ink transition-colors duration-200 hover:border-forest hover:text-forest focus:outline-none focus-visible:ring-2 focus-visible:ring-forest/30;
+  }
+
+  .num-index {
+    @apply font-mono text-sm font-semibold text-brass;
+  }
+
+  .mono-fig {
+    @apply font-mono tabular-nums;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .paper-grain {
+    background-image: radial-gradient(rgba(27, 26, 21, 0.03) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
