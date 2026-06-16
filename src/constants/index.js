@@ -19,6 +19,7 @@ import {
   FiTarget,
   FiTrendingUp,
   FiUsers,
+  FiWind,
 } from 'react-icons/fi';
 
 export const profile = {
@@ -245,17 +246,17 @@ export const projects = [
     icon: FiBarChart2,
     accent: 'oxblood',
     summary:
-      'A market-neutral merger-arbitrage strategy backtested across a decade of all-cash M&A deals.',
+      'A market-neutral statistical-arbitrage strategy backtested across a decade of all-cash M&A deals, engineered for low beta and reduced volatility relative to the S&P 500.',
     points: [
-      'Developed and backtested the "ArbiTIM" merger-arbitrage strategy using 285 all-cash M&A deals ($500M+ value) from 2015–2024, achieving low market correlation and reduced volatility.',
-      'Leveraged R-Studio and Bloomberg Terminal to analyze risk-adjusted returns and deal-failure probabilities.',
-      'Identified key regulatory and execution risks to optimize a portfolio designed for long-term institutional investors.',
+      'Designed and backtested the "ArbiTIM" statistical-arbitrage strategy across 285 all-cash M&A deals ($500M+) from 2015–2024, constructing a market-neutral portfolio achieving low beta and reduced volatility relative to the S&P 500.',
+      'Quantified deal-failure probabilities and modeled regulatory execution risk using R and Bloomberg Terminal.',
+      'Optimized position sizing based on risk-adjusted return profiles and tail-risk scenarios.',
     ],
     metrics: [
       { value: '285', label: 'Deals analyzed' },
       { value: '2015–24', label: 'Backtest window' },
     ],
-    tags: ['R', 'Bloomberg', 'Backtesting', 'Market-Neutral'],
+    tags: ['R', 'Bloomberg', 'Position Sizing', 'Market-Neutral'],
   },
 ];
 
@@ -297,6 +298,8 @@ export const education = {
   honors: ['Emerson / Harris Scholar', 'MIT Chamber Music Society'],
   coursework: [
     'Probability & Statistics',
+    'Real Analysis',
+    'Discrete Mathematics',
     'Laboratory in Investments',
     'Corporate Financial Accounting',
     'Taxes & Business Strategy',
@@ -316,6 +319,12 @@ export const interests = [
     icon: FiActivity,
     blurb:
       'Training for a first half-marathon — a study in patience, consistency, and pushing through mental blocks.',
+  },
+  {
+    title: 'Surfing',
+    icon: FiWind,
+    blurb:
+      'Hawaii-raised and most at home in the water — surfing is a study in timing, patience, and reading conditions you can\u2019t control.',
   },
   {
     title: 'Classical Violin',
