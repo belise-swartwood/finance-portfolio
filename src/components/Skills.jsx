@@ -4,24 +4,6 @@ import { skillGroups } from '../constants';
 import SectionWrapper from '../hoc/SectionWrapper';
 import SectionHeading from './SectionHeading';
 
-// Animated proficiency bar that fills on scroll into view.
-const CompetencyBar = ({ name, level }) => (
-  <div>
-    <div className="flex items-center justify-between">
-      <span className="text-sm text-ink">{name}</span>
-    </div>
-    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-paper-deep">
-      <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: `${level}%` }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 1.1, ease: 'easeOut' }}
-        className="h-full rounded-full bg-gradient-to-r from-forest to-brass"
-      />
-    </div>
-  </div>
-);
-
 const Skills = () => (
   <div className="container-page section-pad">
     <SectionHeading
@@ -47,11 +29,14 @@ const Skills = () => (
               <h3 className="font-display text-lg font-semibold text-ink">{group.title}</h3>
             </div>
 
-            <div className="mt-6 space-y-5">
+            <ul className="mt-6 space-y-3.5">
               {group.items.map((item) => (
-                <CompetencyBar key={item.name} name={item.name} level={item.level} />
+                <li key={item} className="flex items-center gap-3 text-sm text-ink-soft">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-forest to-brass" />
+                  {item}
+                </li>
               ))}
-            </div>
+            </ul>
           </motion.div>
         );
       })}

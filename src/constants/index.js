@@ -135,7 +135,7 @@ export const experiences = [
     points: [
       'Developed a LASSO regression model (R-squared = 0.71) identifying the top 8 predictors of clinically significant depression treatment response across 2 fMRI datasets.',
       'Validated findings with a classification model (AUC = 0.84); results presented at the Gerontological Society of America Conference 2025.',
-      'First author of a manuscript submitted for publication, covering brain-connectivity network patterns in treatment-resistant depression.',
+      'First author of a manuscript; research covers brain-connectivity network patterns in treatment-resistant depression.',
     ],
     tags: ['LASSO Regression', 'Classification', 'fMRI', 'Python'],
   },
@@ -158,42 +158,27 @@ export const skillGroups = [
   {
     title: 'Programming & Analytics',
     icon: FiCode,
-    items: [
-      { name: 'Python (Pandas, NumPy)', level: 92 },
-      { name: 'R / R-Studio', level: 85 },
-      { name: 'MATLAB', level: 72 },
-      { name: 'Excel & Financial Modeling', level: 94 },
-    ],
+    items: ['Python (Pandas, NumPy)', 'R / R-Studio', 'MATLAB', 'Excel & Financial Modeling'],
   },
   {
     title: 'Financial Modeling',
     icon: FiTrendingUp,
-    items: [
-      { name: 'DCF Modeling', level: 90 },
-      { name: 'Financial Statement Analysis', level: 88 },
-      { name: 'LBO Modeling', level: 84 },
-      { name: 'Sensitivity Analysis', level: 86 },
-    ],
+    items: ['DCF Modeling', 'Financial Statement Analysis', 'LBO Modeling', 'Sensitivity Analysis'],
   },
   {
     title: 'Macro & Markets',
     icon: FiCompass,
     items: [
-      { name: 'FX & Exchange-Rate Dynamics', level: 87 },
-      { name: 'Monetary Policy Analysis', level: 83 },
-      { name: 'Merger Arbitrage', level: 84 },
-      { name: 'Portfolio Construction', level: 82 },
+      'FX & Exchange-Rate Dynamics',
+      'Monetary Policy Analysis',
+      'Merger Arbitrage',
+      'Portfolio Construction',
     ],
   },
   {
     title: 'Platforms & Data',
     icon: FiDatabase,
-    items: [
-      { name: 'Bloomberg Terminal', level: 84 },
-      { name: 'FRED / BLS / CME Data', level: 82 },
-      { name: 'Regression & LASSO', level: 82 },
-      { name: 'Statistical Inference', level: 83 },
-    ],
+    items: ['Bloomberg Terminal', 'FRED / BLS / CME Data', 'Regression & LASSO', 'Statistical Inference'],
   },
 ];
 
